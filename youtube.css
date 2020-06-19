@@ -29,11 +29,6 @@ button:focus {
 	background-color: white;
 }
 
-button.active {
-	border: none;
-	color: var(--blue);
-}
-
 /*navbar css*/
 
 header {
