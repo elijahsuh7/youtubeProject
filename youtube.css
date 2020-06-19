@@ -97,6 +97,7 @@ video {
 .hashtag li {
 	display: inline-block;
 	margin: 8px 8px 0px 16px;
+	font-weight: lighter;
 }
 
 .hashtag > li > a {
@@ -157,6 +158,15 @@ video {
 .video-icons span {
 	font-size: 16px;
 	margin: 8px;
+}
+
+.like {
+	color: var(--black);
+}
+
+.like.active,
+.dislike.active {
+	color: var(--blue);
 }
 
 /* subscriber, thumbnail, subscribe btn CSS*/

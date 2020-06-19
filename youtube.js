@@ -1,10 +1,10 @@
 const line = document.querySelector(".line");
 const title = document.querySelector(".title.clamp");
-const videoBtn = document.querySelectorAll("button");
 const subBtn = document.querySelector(".subBtn");
 const subDiv = document.querySelector(".subscribe");
+const like = document.querySelector(".like");
+const dislike = document.querySelector(".dislike");
 
-console.log(subBtn.className);
 line.addEventListener("click", () => {
 	line.classList.toggle("clicked");
 	title.classList.toggle("clamp");
@@ -24,8 +24,17 @@ subBtn.addEventListener("click", () => {
 	}
 });
 
-for (let i = 1; i <= videoBtn.length; i++) {
-	videoBtn[i].addEventListener("click", () => {
-		videoBtn[i].classList.toggle("active");
-	});
-}
+//like and unlike button highlighting when clicked
+like.addEventListener("click", () => {
+	like.classList.toggle("active");
+	if (dislike.className === "dislike active") {
+		dislike.classList.toggle("active");
+	}
+});
+
+dislike.addEventListener("click", () => {
+	dislike.classList.toggle("active");
+	if (like.className === "like active") {
+		like.classList.toggle("active");
+	}
+});
