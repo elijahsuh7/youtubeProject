@@ -1,0 +1,252 @@
+:root {
+	--white: #f8f8ff;
+	--off-white: #f5f5f5;
+	--light-gray: #d6d6d6;
+	--gray: gray;
+	--dark-gray: #666666;
+	--black: #333;
+	--red: #ff0000;
+	--dark-red: #c40233;
+	--blue: #0000ff;
+}
+
+/*general setting?*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+button,
+button:focus {
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+}
+
+button.active {
+	border: none;
+	color: var(--blue);
+}
+
+/*navbar css*/
+
+#navbar {
+	margin: 0;
+	display: flex;
+	max-width: 100%;
+	justify-content: space-between;
+	background: #333;
+	color: var(--white);
+	padding: 12px;
+}
+
+.fa-youtube {
+	color: var(--red);
+}
+
+.logo a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+/* video section CSS */
+
+.video-wrapper {
+	position: sticky;
+	top: 0;
+	text-align: center;
+	background-color: var(--black);
+	width: 100%;
+	height: 100%;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+	max-width: 1000px;
+	max-height: 300px;
+}
+
+/* video hashtag CSS */
+
+.hashtag {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.hashtag li {
+	display: inline-block;
+	margin: 8px 8px 0px 16px;
+}
+
+.hashtag > li > a {
+	text-decoration-line: none;
+	color: var(--blue);
+}
+
+.hashtag > li > a:visited {
+	color: var(--blue);
+}
+
+/*video title CSS*/
+
+.video-title {
+	display: flex;
+	padding: 8px 16px;
+}
+
+.title.clamp {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.video-title button {
+	display: inline-block;
+	height: 100%;
+}
+
+/*view date*/
+
+.view-date-icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 16px;
+	border-bottom: 0.5px solid var(--gray);
+}
+
+.view-date span {
+	font-size: 12px;
+	color: var(gray);
+}
+
+/* icon sections */
+.video-icons {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 8px;
+}
+
+.video-icons button {
+	font-size: 12px;
+	margin: 4px;
+}
+
+.video-icons span {
+	font-size: 16px;
+	margin: 8px;
+}
+
+/* subscriber, thumbnail, subscribe btn CSS*/
+
+#thumbnail-div {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.thumb-subscribe {
+	display: flex;
+	margin: 12px 16px 12px 16px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 0.5px solid var(--gray);
+}
+
+.thumbnail {
+}
+
+.thumbanail-photo {
+	width: 100%;
+	margin: auto;
+	object-fit: contain;
+}
+
+.name-subscribe {
+	display: inline-block;
+	height: 100%;
+	margin-left: 12px;
+	margin-bottom: 12px;
+	line-height: 20px;
+}
+
+/*subscribe Button*/
+
+#subBtn {
+	color: var(--white);
+	padding: 10px 14px;
+	border-radius: 2px;
+	font-size: 12px;
+	font-weight: 400;
+	background-color: var(--dark-red);
+}
+
+#subBtn.active {
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+}
+
+/* next video CSS */
+.next-video {
+	display: flex;
+	margin: 20px;
+	flex-direction: column;
+}
+
+.next-video-list {
+	list-style: none;
+	padding: 0;
+}
+
+.next-video-list li {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.next-video-list li i {
+	margin-top: 10px;
+	align-self: start;
+}
+
+/*next video thumnail */
+.next-video-thumbnail {
+	width: 200px;
+	height: 100px;
+}
+
+.next-video-thumb {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: inline-block;
+}
+
+.textbox {
+	margin: 10px;
+	align-self: center;
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	.main-wrapper {
+		flex-direction: row;
+		margin: 12px;
+	}
+}
