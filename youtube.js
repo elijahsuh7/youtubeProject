@@ -3,6 +3,14 @@
 //title clamping function
 const title = document.querySelector(".title.clamp");
 const line = document.querySelector(".line");
+const titleLength = title.innerHTML.length;
+console.log(titleLength);
+if (titleLength < 71) {
+	line.style.display = "none";
+} else {
+	line.style.display = "inline-block";
+}
+
 line.addEventListener("click", () => {
 	line.classList.toggle("clicked");
 	title.classList.toggle("clamp");

@@ -83,6 +83,10 @@ video {
 
 /* video hashtag CSS */
 
+.head-wrapper {
+	min-width: 65%;
+}
+
 .hashtag {
 	list-style: none;
 	margin: 0;
@@ -111,10 +115,16 @@ video {
 	padding: 8px 16px;
 }
 
+.title {
+	max-width: 110ch;
+	word-break: break-all;
+}
+
 .title.clamp {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
 
@@ -217,6 +227,7 @@ video {
 
 /* next video CSS */
 .next-video {
+	flex-grow: 1;
 	display: flex;
 	margin: 20px;
 	flex-direction: column;
@@ -267,5 +278,8 @@ video {
 	.main-wrapper {
 		flex-direction: row;
 		margin: 12px;
+	}
+	.video-title button {
+		display: none;
 	}
 }
