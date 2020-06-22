@@ -77,8 +77,8 @@ header {
 video {
 	width: 100%;
 	height: 100%;
-	max-width: 1000px;
-	max-height: 300px;
+	max-width: 800px;
+	max-height: 480px;
 }
 
 /* video hashtag CSS */
