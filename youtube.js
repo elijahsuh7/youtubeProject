@@ -3,7 +3,7 @@
 //title clamping function
 const title = document.querySelector(".title.clamp");
 const line = document.querySelector(".line");
-const titleLength = title.innerHTML.length;
+const titleLength = title.textContent.length;
 console.log(titleLength);
 if (titleLength < 71) {
 	line.style.display = "none";
