@@ -15,11 +15,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
+	font-size: 14px;
 }
 
 button,
@@ -28,6 +28,7 @@ button:focus {
 	cursor: pointer;
 	outline: none;
 	background-color: white;
+	color: var(--gray);
 }
 
 /*navbar css*/
@@ -113,12 +114,15 @@ video {
 
 .video-title {
 	display: flex;
+	height: 100%;
+	width: 100%;
 	padding: 8px 16px;
 }
 
 .title {
 	max-width: 110ch;
 	word-break: break-all;
+	font-size: 16px;
 }
 
 .title.clamp {
@@ -136,6 +140,12 @@ video {
 
 /*view date*/
 
+.view-date {
+	padding: 12px 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
 .view-date-icons {
 	display: flex;
 	justify-content: space-between;
@@ -146,7 +156,7 @@ video {
 
 .view-date span {
 	font-size: 12px;
-	color: var(gray);
+	color: var(--dark-gray);
 }
 
 /* icon sections */
@@ -164,10 +174,6 @@ video {
 .video-icons span {
 	font-size: 16px;
 	margin: 8px;
-}
-
-.like {
-	color: var(--black);
 }
 
 .like.active,
