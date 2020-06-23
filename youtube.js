@@ -4,7 +4,6 @@
 const title = document.querySelector(".title.clamp");
 const line = document.querySelector(".line");
 const titleLength = title.textContent.length;
-console.log(titleLength);
 if (titleLength < 71) {
 	line.style.display = "none";
 } else {
@@ -20,8 +19,9 @@ line.addEventListener("click", () => {
 const subBtn = document.querySelector("#subBtn");
 const subDiv = document.querySelector(".subscribe");
 const bellBtn = document.createElement("button");
+bellBtn.classList = "bellBtn";
 const bell = document.createElement("i");
-bell.setAttribute("class", "fas fa-bell");
+bell.classList = "fas fa-bell";
 bell.style.color = "gray";
 subBtn.addEventListener("click", () => {
 	if (subBtn.className === "subBtn") {
@@ -31,6 +31,20 @@ subBtn.addEventListener("click", () => {
 	} else {
 		subBtn.classList.toggle("active");
 		subDiv.removeChild(bellBtn);
+	}
+});
+
+const modalContent = document.querySelector(".modal-content");
+bellBtn.addEventListener("click", () => {
+	modal.style.display = "block";
+	modalContent.style.display = "flex";
+});
+
+const modal = document.querySelector(".modal");
+window.addEventListener("click", (event) => {
+	if (event.target === modal) {
+		modal.style.display = "none";
+		modalContent.style.display = "none";
 	}
 });
 
