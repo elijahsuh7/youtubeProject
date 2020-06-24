@@ -222,6 +222,10 @@ video {
 	margin-bottom: 8px;
 }
 
+#bell {
+	display: none;
+}
+
 #subBtn.active {
 	background-color: var(--light-gray);
 	color: var(--dark-gray);
